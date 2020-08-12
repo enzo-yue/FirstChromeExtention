@@ -1,11 +1,17 @@
+// chrome.webRequest.onBeforeRequest.addListener(
+//     function(details) {
+//         return {
+//             cancel : true
+//         }
+//     },
+//     {
+//         urls: ["*://*.zedo.com/*"]
+//     },
+//     ["blocking"]
+// )
+
 chrome.webRequest.onBeforeRequest.addListener(
-    function(details) {
-        return {
-            cancel : true
-        }
-    },
-    {
-        urls: ["*://*.zedo.com/*"]
-    },
+    function(details) { return { cancel: true }},
+    { urls: ["*://*.zedo.com/*"] },
     ["blocking"]
 )

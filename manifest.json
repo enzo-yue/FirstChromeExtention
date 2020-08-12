@@ -2,9 +2,9 @@
     "name" : "Simple Ad Blocker",
     "version" : "1.0",
     "description" : "First Chrome extension",
-    "permission" : ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "permissions" : ["webRequest", "webRequestBlocking", "<all_urls>"],
     "background" : {
-        "script" : ["background.js"]
+        "scripts" : ["background.js"]
     },
     "icons" : {
         "16" : "icons/logo_16x16.png",
